@@ -1,42 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>The Pines | Luxury Wilderness Retreat</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-   <section class="hero d-flex justify-content-center align-items-center">
 
-    <nav class="navbar navbar-dark position-absolute top-0 end-0 p-4">
-    <div class="d-flex align-items-center gap-4">
+    <!-- HEADER -->
+    <header class="site-header position-absolute top-0 start-0 w-100">
 
-        <a href="#" class="nav-link text-white">HOME</a>
-        <a href="#" class="nav-link text-white">STAY</a>
-        <a href="#" class="nav-link text-white">DINING</a>
+        <nav class="navbar navbar-expand-lg navbar-dark">
 
-        <a href="login.html" class="btn btn-outline-light px-3">
-            BOOK NOW
-        </a>
+            <div class="container-fluid px-4 px-lg-5">
 
-    </div>
-    </nav>
+                <a class="navbar-brand" href="#">
+                    <img src="plogo.png" alt="The Pines Logo">
+                </a>
 
-       <img src="plogo.png" class="site-logo" alt="The Pines Logo">
-    
+                <div class="ms-auto d-flex align-items-center gap-4">
+
+                    <a href="#home" class="nav-link text-white">
+                        HOME
+                    </a>
+
+                    <a href="#stay" class="nav-link text-white">
+                        STAY
+                    </a>
+
+                    <a href="#dining" class="nav-link text-white">
+                        DINING
+                    </a>
+
+                    <a href="login.html" class="btn btn-outline-light px-3">
+                        BOOK NOW
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section id="home" class="hero d-flex justify-content-center align-items-center">
+
         <div class="hero-content text-center">
-            <p>WELCOME TO</p>
-            <h1>THE PINES</h1>
-           <p class="tagline mb-4">Luxury Wilderness Retreat</p>
 
-            <a href="login.html" class="btn btn-outline-light px-4 py-2">
-                 VIEW HOTEL
+            <p>WELCOME TO</p>
+
+            <h1>THE PINES</h1>
+
+            <p class="tagline mb-4">
+                Luxury Wilderness Retreat
+            </p>
+
+            <a href="#stay" class="btn btn-outline-light px-4 py-2">
+                EXPLORE THE PINES
             </a>
+
         </div>
 
+        <a href="#stay" class="scroll-down">
+            ↓
+        </a>
+
     </section>
- 
+
+
+    <!-- STAY -->
+   <section id="stay" class="stay-section">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <img src="bed.jpg"
+                     class="stay-image img-fluid"
+                     alt="The Pines hotel room">
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <p class="section-label">
+                    YOUR MOUNTAIN ESCAPE
+                </p>
+
+                <h2>
+                    Stay Among The Pines
+                </h2>
+
+                <p class="section-text">
+                    Settle into the comfort of The Pines, where
+                    peaceful surroundings and thoughtful hospitality
+                    create the perfect mountain retreat.
+                </p>
+
+                <p class="section-text">
+                    Our comfortable hotel rooms offer a relaxing
+                    space to unwind after a day of exploring the
+                    mountains.
+                </p>
+
+                <a href="login.html" class="btn btn-dark px-4 py-2">
+                    VIEW ROOMS
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- DINING -->
+   <!-- DINING -->
+<section id="dining" class="dining-section">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <img src="grill.jpg"
+                     class="dining-image img-fluid"
+                     alt="The Timber Grill">
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <p class="section-label">
+                    THE TIMBER GRILL
+                </p>
+
+                <h2>
+                    Gather Around The Fire
+                </h2>
+
+                <p class="section-text">
+                    A warm and rustic dining experience inspired by
+                    mountain evenings, open skies, and the rich flavours
+                    of Pakistani cuisine.
+                </p>
+
+                <div class="grill-details">
+
+                    <p>01 &nbsp; Grilled Specialties</p>
+
+                    <p>02 &nbsp; Pakistani BBQ</p>
+
+                    <p>03 &nbsp; Outdoor Dining</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- CAMPING -->
+    <!-- CAMPING -->
+<section class="camping-section">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <!-- Content -->
+            <div class="col-lg-6">
+
+                <p class="section-label">
+                    BEYOND THE HOTEL
+                </p>
+
+                <h2>
+                    Sleep Beneath The Pines
+                </h2>
+
+                <p class="section-text">
+                    Experience the outdoors in our wooden camping
+                    pods tucked beneath the pine trees.
+                </p>
+
+                <p class="section-text">
+                    Spend your evening around a bonfire and wake up
+                    surrounded by the quiet of nature.
+                </p>
+
+                <a href="login.html" class="btn btn-dark px-4 py-2">
+                    EXPLORE CAMPING
+                </a>
+
+            </div>
+
+
+            <!-- Image -->
+            <div class="col-lg-6">
+
+                <img src="camping.jpg"
+                     class="camping-image img-fluid"
+                     alt="The Pines camping experience">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="container text-center">
+
+            <h2>THE PINES</h2>
+
+            <p class="footer-tagline">
+                Luxury Wilderness Retreat
+            </p>
+
+            <p class="footer-description">
+                A peaceful mountain escape surrounded by pine forests,
+                fresh mountain air and warm hospitality.
+            </p>
+
+            <p class="footer-contact">
+                📍 Township, Abbottabad, Khyber Pakhtunkhwa, Pakistan
+            </p>
+
+            <p class="footer-contact">
+                ✉ info@thepines.pk
+            </p>
+
+            <div class="footer-bottom">
+                © 2026 The Pines. All Rights Reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
 </body>
 </html>

@@ -1,7 +1,32 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+
+/* HEADER */
+
+.site-header {
+    z-index: 10;
+}
+
+.site-header .navbar-brand img {
+    width: 150px;
+}
+
+.navbar .nav-link {
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #d6b878 !important;
+}
+
+
+/* HERO */
 
 .hero {
     min-height: 100vh;
@@ -37,33 +62,268 @@
     font-size: 13px;
     letter-spacing: 7px;
     margin-bottom: 8px;
-    text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 .hero-content .tagline {
     font-size: 16px;
     letter-spacing: 4px;
-    text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.6);
 }
 
-.site-logo {
+.scroll-down {
     position: absolute;
-    top: 20px;
-    left: 30px;
-    width: 150px;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
     z-index: 2;
+    opacity: 0.8;
 }
 
-.navbar {
-    z-index: 3;
+.scroll-down:hover {
+    color: #d6b878;
 }
 
-.navbar .nav-link {
-    font-size: 13px;
+
+/* GENERAL */
+
+.section-label {
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.section-text {
+    max-width: 600px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
+/* STAY */
+
+.stay-section {
+    min-height: 100vh;
+    padding: 100px 20px;
+    background: #f5f2eb;
+    color: #26352c;
+    display: flex;
+    align-items: center;
+}
+
+.stay-section h2,
+.camping-section h2,
+.dining-section h2 {
+    font-size: 48px;
+    font-weight: 400;
     letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.stay-card {
+    padding: 45px 35px;
+    background: white;
+    border: 1px solid #c8c8c8;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.stay-card h3 {
+    font-size: 18px;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+.stay-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.stay-item:last-child {
+    border-bottom: none;
+}
+
+.stay-item span {
+    color: #8a7650;
+    font-size: 13px;
+}
+
+.stay-item p {
+    margin: 0;
+    color: #555;
+}
+
+
+/* DINING */
+
+.dining-section {
+    min-height: 100vh;
+    padding: 100px 20px;
+    background: #17231d;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.dining-section .section-label {
+    color: #d6b878;
+}
+
+.dining-text {
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.8;
+    opacity: 0.8;
+}
+
+.dining-card {
+    padding: 40px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
     transition: 0.3s;
 }
 
-.navbar .nav-link:hover {
-    color: #d6b878 !important;
+.dining-card:hover {
+    transform: translateY(-5px);
+    border-color: #d6b878;
+}
+
+.dining-card span {
+    color: #d6b878;
+    font-size: 13px;
+}
+
+.dining-card h3 {
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin: 20px 0;
+}
+
+.dining-card p {
+    line-height: 1.7;
+    opacity: 0.75;
+    margin: 0;
+}
+
+
+/* CAMPING */
+
+.camping-section {
+    min-height: 100vh;
+    padding: 100px 20px;
+    background: #f5f2eb;
+    color: #26352c;
+    display: flex;
+    align-items: center;
+}
+
+.camping-info {
+    border-left: 2px solid #8a7650;
+    padding-left: 30px;
+}
+
+.camping-info h3 {
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.camping-info p {
+    color: #666;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* FOOTER */
+
+.site-footer {
+    background: #17231d;
+    color: white;
+    padding: 70px 20px 20px;
+}
+
+.site-footer h2 {
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 7px;
+}
+
+.footer-tagline {
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.footer-description {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+    opacity: 0.85;
+}
+
+.footer-contact {
+    margin: 8px 0;
+}
+
+.footer-bottom {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .site-header .navbar {
+        display: none;
+    }
+
+    .site-header .navbar-brand img {
+        width: 120px;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+        letter-spacing: 7px;
+    }
+
+    .stay-section h2,
+    .camping-section h2,
+    .dining-section h2 {
+        font-size: 38px;
+    }
+
+    .stay-card,
+    .camping-info {
+        margin-top: 30px;
+    }
+}
+
+
+.stay-image,
+.dining-image,
+.camping-image {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.stay-image,
+.dining-image,
+.camping-image {
+    transition: 0.4s;
+}
+
+.stay-image:hover,
+.dining-image:hover,
+.camping-image:hover {
+    transform: scale(1.02);
 }
